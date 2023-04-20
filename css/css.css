@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+
+}
+.picture {
+    background-image: url(../images/main.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+
+.logo {
+    height: 40px;
+    width: 40px;
+    margin-left: 30px;
+    margin-top: 15px
+}
+
+.logo-title {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 15px
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    padding: 0px 100px;
+}
+
+nav .first-ul {
+    float: right;
+    margin-top: 15px ;
+}
+
+nav .first-ul li {
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #e5b015;
+    font-weight: bold;
+}
+
+button {
+    background-color: #e5b015;
+    border-radius: 6px ;
+    border: none;
+}
+
+.buttons:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.button-one {
+    height: 49px;
+    width: 100px;
+}
+
+
+.button-two-title {
+    font-size: 25px;
+}
+
+.title-one{
+    color: #e5b015;
+    top: 34%;
+    left: 10%;
+    position: absolute;
+}
+
+.title-two {
+    color: white;
+    top: 42%;
+    left: 10%;
+    position: absolute;
+}
+
+.button-two {
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    top: 52%;
+    left: 10%;
+}
+
+/* L I S T O F C A R S */   
+
+.car {
+    height: 150px;
+    width: 250px;
+    margin: 60px 0px 20px 60px;
+}
+
+.buy {
+    height: 30px;
+    width: 100px;
+}
+
+.container h5 {
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+}
+
+.container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* L I S T O F C A R S */
+
+
+/* C O N T A C T */
+
+.contact {
+    margin-top: 30px;
+    background-color: black;
+}
+
+.phone , .tetouan , .copy {
+    color: #e5b015;
+}
+
+.number {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.adresse {
+    float: right;
+    padding-top: 20px;
+    color: white;
+    padding-right: 20px;
+}
+
+.contact h4 {
+    font-size: 15px;
+    color: #e5b015;
+    text-align: center;
+}
+
+/* C O N T A C T */
+
+/* S C R E N S */
+
+@media (min-width: 768px) {
+    .picture  .fa-bars{
+        display: none;
+    }
+
+    .picture .second-ul {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .picture .first-ul {
+        display: none;
+    }
+
+    nav {
+        padding: 0px;
+    }
+
+    nav img {
+        margin-bottom: 30px;
+    }
+
+    .picture  .fa-bars{
+        display: inline-block;
+        color: #e5b015;
+        margin: 20px 0px 0px 250px;
+        font-size: 2rem;
+    }
+
+    .picture .fa-bars:hover + .second-ul {
+        display: inline-block;
+        margin-left: 230px;
+    }
+
+    .picture .second-ul {
+        display: none;
+        list-style: none;
+
+    }
+    .picture a {
+        color: white;
+    }
+}
+
+/* S C R E N S */
